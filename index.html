@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> tesluach</title></title>
+<title>Dagim</title></title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
 
 <header>
 <nav>
-    <h1 class="logo">tesluach</h1>
+    <h1 class="logo">Dagim</h1>
 
     <div class="hamburger" onclick="toggleMenu()">
         <span></span>
@@ -34,7 +34,7 @@
 </header>
 
 <section id="home" class="section hero reveal">
-    <h2>Hello 👋 I'm <span class="gradient-text">tesluach</span</h2><br>
+    <h2>Hello 👋 I'm <span class="gradient-text">Dagim</span</h2><br>
     <h3 class="typing"></h3>
     <a href="#projects" class="btn">Explore My Work</a>
 </section>
@@ -108,49 +108,10 @@
   </main>
 
 <footer>
-    © 2026 tesluach. All rights are reserved
+    © 2026 Dagim. All rights are reserved
 </footer>
 
-<script>
-/* Typing Effect */
-const textArray = [
-"Future Software Engineer 🚀",
-"Creative Web Developer 💻",
-"Building Modern Interfaces ⚡"
-];
 
-let typingElement = document.querySelector(".typing");
-let textIndex = 0;
-let charIndex = 0;
-
-function typeEffect(){
-    if(charIndex < textArray[textIndex].length){
-        typingElement.textContent += textArray[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect, 60);
-    } else {
-        setTimeout(eraseEffect, 1500);
-    }
-}
-
-function eraseEffect(){
-    if(charIndex > 0){
-        typingElement.textContent =
-        textArray[textIndex].substring(0, charIndex-1);
-        charIndex--;
-        setTimeout(eraseEffect, 40);
-    } else {
-        textIndex++;
-        if(textIndex >= textArray.length) textIndex = 0;
-        setTimeout(typeEffect, 300);
-    }
-}
-
-typeEffect();
-function toggleMenu(){
-    document.getElementById("nav-links").classList.toggle("active");
-}
-</script>
 
 </body>
 
